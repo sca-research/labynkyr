@@ -1,0 +1,14 @@
+% C++ build dirs
+doc/
+
+% Java/Matlab ignores
+matlab/rank/bin
+matlab/rank/target
+matlab/rank/.classpath
+matlab/rank/.project
+matlab/rank/.settings
+
+% Eclipse
+.cproject
+.project
+.settings
