@@ -3,6 +3,7 @@
 * Boost >= 1.58 (earlier versions may suffice, but have not been tested)
 * CMake 2.8.12
 * libunittest++ 1.4.0
+* maven >= 3.3.9 (for Matlab/Java implementation)
 
 Boost is used to provide big integer and decimal support.
 
@@ -31,3 +32,14 @@ The library is header-only and can be used in your own projects by including the
 * `matlab/` -- example usage of running rank estimations directly from Matlab using the Java implementation.
 * `src/` -- C++ library source
 * `test/` -- C++ unit tests
+
+**Using Matlab/Java implementation**
+
+To use the Matlab/Java implementation, compile the Java source code and move the library to the matlab folder.
+~~~~
+cd matlab/rank/
+mvn package
+cp target/LabynkyrRankJ-1.0-jar-with-dependencies.jar ../
+~~~~
+
+Now you should be ready do run the matlab examples.
